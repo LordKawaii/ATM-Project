@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include "NUnit.Framework"
 
 
 int _tmain(int argc, _TCHAR* argv[])
