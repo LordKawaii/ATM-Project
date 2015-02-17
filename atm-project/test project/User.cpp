@@ -22,7 +22,7 @@ bool User::setName(std::string name)
 
 bool User::setZipcode(int zip)
 {
-	if (zip.rbegin - zip.rend = 5)
+	if (zip / 1000 >= 1)
 	{
 		return true;
 	}
