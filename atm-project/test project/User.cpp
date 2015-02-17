@@ -1,13 +1,17 @@
+
 #include "stdafx.h"
 #include "User.h"
-#include "nunit.framework"
+//Looking it up, if we want to use nunit we have to make it be in the name space instead of doind a 
+//#include
+//#include "nunit.framework"
 
+using namespace NUnit::Framework;
 
 User::User()
 {
 }
 
-User::setName(std::string name)
+bool User::setName(std::string name)
 {
 	if (name != "")
 	{
@@ -16,7 +20,7 @@ User::setName(std::string name)
 	return false;
 }
 
-User::setZipcode(int zip)
+bool User::setZipcode(int zip)
 {
 	if (zip.rbegin - zip.rend = 5)
 	{
@@ -25,7 +29,7 @@ User::setZipcode(int zip)
 	return false;
 }
 
-User::setDob(std::string DOB)
+bool User::setDob(std::string DOB)
 {
 	if (DOB != "")
 	{
@@ -34,7 +38,7 @@ User::setDob(std::string DOB)
 	return false;
 }
 
-User::addCard(Card card)
+bool User::addCard(Card card)
 {
 	for (int i = 0; i < Card; i++)
 	{
