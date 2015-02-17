@@ -1,7 +1,6 @@
 #pragma once
-ref class card
-
 using namespace NUnit::Framework;
+ref class card
 {
 private:
 	int PIN;

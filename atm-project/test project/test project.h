@@ -2,6 +2,7 @@
 
 #pragma once
 #include "Account.h"
+#include "User.h"
 
 using namespace NUnit::Framework;
 
@@ -49,6 +50,37 @@ namespace testproject {
 			Account tempAccount;
 			int balance = tempAccount.getBalance();
 			Assert::AreEqual(balance, 0);
+		}
+
+		[Test]
+		void testSetName()
+		{
+			User tempUser;
+			bool name = tempUser.setName(std::string );
+
+			Assert::AreEqual(true, name);
+			Assert::AreEqual(false, "");
+		}
+
+		[Test]
+		void testSetZip()
+		{
+			Assert::AreEqual(true, 97478);
+			Assert::AreEqual(false, 123);
+		}
+
+		[Test]
+		void testSetDOB()
+		{
+			Assert::AreEqual(true, "12/07/1992");
+			Assert::AreEqual(false, "");
+		}
+
+		[Test]
+		void testAddCard()
+		{
+			Assert::AreEqual(true, );
+			Assert::AreEqual(false, );
 		}
 	private:
 		Account account;

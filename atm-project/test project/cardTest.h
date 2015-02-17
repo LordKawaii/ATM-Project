@@ -71,7 +71,7 @@ public:
 
 	[Test]
 	//Is the card number correct?
-	void isNumCorrect
+	void isNumCorrect()
 	{
 		card testCard(102323498504, 1234, 20161209);
 		Assert::AreEqual(true, testCard.checkCardNum(102323498504));
