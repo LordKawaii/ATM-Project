@@ -1,4 +1,5 @@
 #pragma once
+using namespace NUnit::Framework;
 ref class cardTest
 #include "card.h"
 {
