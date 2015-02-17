@@ -1,15 +1,33 @@
 #pragma once
 ref class card
+
+using namespace NUnit::Framework;
 {
 private:
-	int PIN = 1234;
-	int cardNumber = 102323498504;
+	int PIN;
+	int cardNumber;
 	int error = 0;
-	int expDate = 20161209; //2016 december 9th
+	int expDate; //2016 december 9th
 
 
 public:
-	card();
+	card(int setCardNumber, int setPIN, int setExpDate);
+	{
+		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999)
+		{
+			cardNumber = -1;
+			PIN = -1;
+			expDate = -1;
+			error = 3;
+		}
+		else
+		{
+			cardNumber = setCardNumber;
+			setPIN = PIN;
+			setExpDate = expDate;
+		}
+
+	}
 	
 	static bool changePIN(int conPIN, int newPIN)
 	{
@@ -40,5 +58,15 @@ public:
 		if (date < expDate)
 			return false;
 		else return true;
+	}
+
+	static bool checkCardNum(int testCardNum)
+	{
+		if (testCardNum = cardNumber)
+			return true;
+		else
+			return false;
+
+	}
 };
 

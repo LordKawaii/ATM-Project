@@ -1,11 +1,26 @@
-﻿Build started 2/17/2015 12:31:22 PM.
-     1>Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\atm-project\test project\test project.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2/17/2015 12:57:18 PM.
+     1>Project "C:\Users\Ben\Desktop\Giterdone\ATM-Project\ATM-project\test project\test project.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Account.cpp "test project.cpp" User.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Stdafx.cpp
+         Stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Account.cpp AssemblyInfo.cpp card.cpp cardTest.cpp "test project.cpp" User.cpp
          Account.cpp
+         AssemblyInfo.cpp
+         card.cpp
+     1>card.cpp(6): error C2535: 'card::card(void)' : member function already defined or declared
+                 c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\card.h(12) : see declaration of 'card::card'
+     1>card.cpp(9): fatal error C1075: end of file found before the left brace '{' at 'c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\card.h(3)' was matched
+         cardTest.cpp
+     1>c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\card.h(2): error C2236: unexpected token 'ref class'. Did you forget a ';'?
+     1>c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\cardTest.h(4): error C2059: syntax error : '{'
+     1>c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\cardTest.h(4): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+     1>cardTest.cpp(5): error C2653: 'cardTest' : is not a class or namespace name
+     1>cardTest.cpp(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>cardTest.cpp(7): warning C4183: 'cardTest': missing return type; assumed to be a member function returning 'int'
+     1>cardTest.cpp(8): fatal error C1075: end of file found before the left brace '{' at 'c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\card.h(3)' was matched
          test project.cpp
          User.cpp
-     1>c:\users\nwtech\documents\github\atm-project\atm-project\test project\User.h(12): error C2061: syntax error : identifier 'Card'
+     1>c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\User.h(12): error C2061: syntax error : identifier 'Card'
      1>User.cpp(41): error C2065: 'Card' : undeclared identifier
      1>User.cpp(41): error C2146: syntax error : missing ')' before identifier 'card'
      1>User.cpp(41): error C2761: 'bool User::addCard(void)' : member function redeclaration not allowed
@@ -13,11 +28,11 @@
      1>User.cpp(42): error C2143: syntax error : missing ';' before '{'
      1>User.cpp(42): error C2447: '{' : missing function header (old-style formal list?)
          Generating Code...
-     1>c:\users\nwtech\documents\github\atm-project\atm-project\test project\account.cpp(13): error C4716: 'Account::Withdraw' : must return a value
-     1>c:\users\nwtech\documents\github\atm-project\atm-project\test project\account.cpp(17): error C4716: 'Account::Deposit' : must return a value
-     1>c:\users\nwtech\documents\github\atm-project\atm-project\test project\account.cpp(21): error C4716: 'Account::getBalance' : must return a value
-     1>Done Building Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\atm-project\test project\test project.vcxproj" (Build target(s)) -- FAILED.
+     1>c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\account.cpp(13): error C4716: 'Account::Withdraw' : must return a value
+     1>c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\account.cpp(17): error C4716: 'Account::Deposit' : must return a value
+     1>c:\users\ben\desktop\giterdone\atm-project\atm-project\test project\account.cpp(21): error C4716: 'Account::getBalance' : must return a value
+     1>Done Building Project "C:\Users\Ben\Desktop\Giterdone\ATM-Project\ATM-project\test project\test project.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.15
+Time Elapsed 00:00:06.48
