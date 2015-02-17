@@ -1,4 +1,9 @@
 #pragma once
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 using namespace NUnit::Framework;
 ref class card
 {
@@ -10,7 +15,7 @@ private:
 
 
 public:
-	card(int setCardNumber, int setPIN, int setExpDate);
+	card(int setCardNumber, int setPIN, int setExpDate)
 	{
 		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999)
 		{
@@ -28,13 +33,13 @@ public:
 
 	}
 	
-	static bool changePIN(int conPIN, int newPIN)
+	bool changePIN(int conPIN, int newPIN)
 	{
-		if (error = >3 || conPIN > 999 || conPIN < 100)
+		if (error > 2 || conPIN > 999 || conPIN < 100)
 			return false;
 		if (conPIN == PIN)
 			PIN = newPIN;
-		else if (conPIN !- PIN)
+		else if (conPIN != PIN)
 			error++;
 		if (newPIN == PIN)
 			return true;
@@ -42,9 +47,9 @@ public:
 	}
 
 
-	static bool grantAccess(int conPIN)
+	bool grantAccess(int conPIN)
 	{
-		if (error = >3 || conPIN > 999 || conPIN < 100)
+		if (error >= 3 || conPIN > 999 || conPIN < 100)
 			return false;
 		if (conPIN == PIN)
 			return true;
@@ -52,14 +57,14 @@ public:
 			return false;
 	}
 
-	static bool expired(int date)
+	bool expired(int date)
 	{
 		if (date < expDate)
 			return false;
 		else return true;
 	}
 
-	static bool checkCardNum(int testCardNum)
+	bool checkCardNum(int testCardNum)
 	{
 		if (testCardNum = cardNumber)
 			return true;
