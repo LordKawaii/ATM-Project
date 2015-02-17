@@ -1,6 +1,7 @@
 #pragma once
 #include <cstring>
 #include <string>
+#include "card.h"
 ref class User
 {
 public:
@@ -9,6 +10,6 @@ public:
 	bool setName(std::string name);
 	bool setDob(std::string DOB);
 	bool setZipcode(int zip);
-	bool addCard(Card card);
+	bool addCard(card Card);
 };
 
