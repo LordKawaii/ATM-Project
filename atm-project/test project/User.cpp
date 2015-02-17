@@ -38,11 +38,11 @@ bool User::setDob(std::string DOB)
 	return false;
 }
 
-bool User::addCard(Card card)
+bool User::addCard(card Card)
 {
 	for (int i = 0; i < Card; i++)
 	{
-		if (card == Card[i])
+		if (Card == card[i])
 		{
 			return true;
 		}
