@@ -1,6 +1,9 @@
 #pragma once
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> origin/master
 using namespace NUnit::Framework;
 ref class card
 {
