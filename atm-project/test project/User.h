@@ -10,6 +10,7 @@ public:
 	bool setName(std::string name);
 	bool setDob(std::string DOB);
 	bool setZipcode(int zip);
-	bool addCard(card Card);
+	bool addCard(int Card);
+	
 };
 
