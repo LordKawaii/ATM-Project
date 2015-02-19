@@ -1,31 +1,26 @@
-﻿Build started 2/19/2015 1:23:59 PM.
-     1>Project "C:\Users\Ben\Desktop\Giterdone\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2/19/2015 1:35:12 PM.
+     1>Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Stdafx.cpp
-         Stdafx.cpp
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Account.cpp AssemblyInfo.cpp "test project.cpp" User.cpp
-         Account.cpp
-         AssemblyInfo.cpp
-         test project.cpp
-     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(80): warning C4305: 'argument' : truncation from '__int64' to 'int'
-     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(80): warning C4309: 'argument' : truncation of constant value
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib User.cpp "test project.cpp"
          User.cpp
      1>User.cpp(47): warning C4305: 'initializing' : truncation from '__int64' to 'int'
      1>User.cpp(47): warning C4309: 'initializing' : truncation of constant value
+         test project.cpp
+     1>c:\users\nwtech\documents\github\atm-project\test - project\test project\test project.h(80): warning C4305: 'argument' : truncation from '__int64' to 'int'
+     1>c:\users\nwtech\documents\github\atm-project\test - project\test project\test project.h(80): warning C4309: 'argument' : truncation of constant value
          Generating Code...
-       ResourceCompile:
-         C:\Program Files\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
        Link:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ben\Desktop\Giterdone\ATM-Project\test - project\Debug\test project.dll" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ben\Desktop\Giterdone\ATM-Project\test - project\Debug\test project.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\Debug\test project.dll" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\Debug\test project.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
          Debug\Account.obj
          Debug\AssemblyInfo.obj
          Debug\Stdafx.obj
          "Debug\test project.obj"
          Debug\User.obj
          "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         test project.vcxproj -> C:\Users\Ben\Desktop\Giterdone\ATM-Project\test - project\Debug\test project.dll
-     1>Done Building Project "C:\Users\Ben\Desktop\Giterdone\ATM-Project\test - project\test project\test project.vcxproj" (Build target(s)).
+     1>.NETFramework,Version=v4.5.AssemblyAttributes.obj : warning LNK4099: PDB 'vc120.pdb' was not found with '.NETFramework,Version=v4.5.AssemblyAttributes.obj' or at 'C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\Debug\vc120.pdb'; linking object as if no debug info
+         test project.vcxproj -> C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\Debug\test project.dll
+     1>Done Building Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\test project\test project.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.16
+Time Elapsed 00:00:02.50
