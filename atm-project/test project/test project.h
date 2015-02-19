@@ -55,32 +55,29 @@ namespace testproject {
 		[Test]
 		void testSetName()
 		{
-			User tempUser;
-			bool name = tempUser.setName(std::string );
-
-			Assert::AreEqual(true, name);
-			Assert::AreEqual(false, "");
+			Assert::AreEqual(true, User.setName("JJ"));
+			Assert::AreEqual(false, User.setName(""));
 		}
 
 		[Test]
 		void testSetZip()
 		{
-			Assert::AreEqual(true, 97478);
-			Assert::AreEqual(false, 123);
+			Assert::AreEqual(true, User.setZip(97478));
+			Assert::AreEqual(false, User.setZip(9747));
 		}
 
 		[Test]
 		void testSetDOB()
 		{
-			Assert::AreEqual(true, "12/07/1992");
-			Assert::AreEqual(false, "");
+			Assert::AreEqual(true, User.setDob("12/07/1992"));
+			Assert::AreEqual(false, User.setDob(""));
 		}
 
 		[Test]
 		void testAddCard()
 		{
-			Assert::AreEqual(true, );
-			Assert::AreEqual(false, );
+			Assert::AreEqual(true, User.addCard(123456789123));
+			Assert::AreEqual(false, User.addCard());
 		}
 	private:
 		Account account;
