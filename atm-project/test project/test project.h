@@ -63,7 +63,7 @@ namespace testproject {
 		void testSetZip()
 		{
 			Assert::AreEqual(true, user.setZipcode(97478));
-			Assert::AreEqual(false, user.setZipcode(9747));
+			Assert::AreEqual(false, user.setZipcode(9856));
 		}
 
 		[Test]

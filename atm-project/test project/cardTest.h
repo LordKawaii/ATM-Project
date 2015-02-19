@@ -3,6 +3,7 @@
 #include "card.h"
 
 using namespace NUnit::Framework;
+[TestFixture]
 ref class cardTest
 {
 public:

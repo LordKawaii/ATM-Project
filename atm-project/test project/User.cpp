@@ -22,11 +22,15 @@ bool User::setName(std::string name)
 
 bool User::setZipcode(int zip)
 {
-	if (zip / 1000 >= 1)
+	double newZip = zip;
+	int counter = 0;
+
+	while (newZip > 1)
 	{
-		return true;
+		counter++;
+		newZip /= 10;
 	}
-	return false;
+	return (counter == 5);
 }
 
 bool User::setDob(std::string DOB)

@@ -1,0 +1,24 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly test project, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class testproject.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    TestWithdraw(): PrivateScope, Public, HideBySig
+    TestOverWithdraw(): PrivateScope, Public, HideBySig
+    TestDisposit(): PrivateScope, Public, HideBySig
+    GetBalance(): PrivateScope, Public, HideBySig
+    testSetName(): PrivateScope, Public, HideBySig
+    testSetZip(): PrivateScope, Public, HideBySig
+    testSetDOB(): PrivateScope, Public, HideBySig
+    testAddCard(): PrivateScope, Public, HideBySig

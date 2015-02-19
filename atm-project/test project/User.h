@@ -11,6 +11,5 @@ public:
 	bool setDob(std::string DOB);
 	bool setZipcode(int zip);
 	bool addCard(int Card);
-	
 };
 
