@@ -9,13 +9,13 @@ Account::Account(void)
 
 bool Account::Withdraw(int amount)
 {
-	
+	return true;
 }
 bool Account::Deposit(int amount)
 {
-
+	return true;
 }
 int Account::getBalance()
 {
-
+	return true;
 }

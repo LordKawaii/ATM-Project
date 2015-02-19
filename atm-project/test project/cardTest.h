@@ -1,21 +1,6 @@
 #pragma once
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 using namespace NUnit::Framework;
-ref class cardTest
-=======
->>>>>>> ce7e386c3ceaaf0732613e11f4cbc67d8f11e94a
 #include "card.h"
-=======
->>>>>>> 66ae5e97a1e3aa075331e6e9939a7e6d85cd9ad4
-<<<<<<< HEAD
-=======
->>>>>>> 7c0ec90c3b2be48b314c8b8eba20308d348c9aae
-
-#include "card.h"
-
-using namespace NUnit::Framework;
 ref class cardTest
 {
 public:
