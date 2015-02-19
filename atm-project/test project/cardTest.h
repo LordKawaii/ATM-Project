@@ -1,9 +1,10 @@
 #pragma once
-
-#include "card.h"
-
 using namespace NUnit::Framework;
+<<<<<<< HEAD
 [TestFixture]
+=======
+#include "card.h"
+>>>>>>> origin/master
 ref class cardTest
 {
 public:
