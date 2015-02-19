@@ -1,20 +1,17 @@
 #pragma once
 
 
-
-
-using namespace NUnit::Framework;
 ref class card
 {
 private:
 	int PIN;
-	int cardNumber;
+	long long int cardNumber;
 	int error = 0;
-	int expDate; //2016 december 9th
+	long long int expDate; //2016 december 9th
 
 
 public:
-	card(int setCardNumber, int setPIN, int setExpDate)
+	card(long long int setCardNumber, int setPIN, long long int setExpDate)
 	{
 		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999)
 		{
@@ -26,15 +23,15 @@ public:
 		else
 		{
 			cardNumber = setCardNumber;
-			setPIN = PIN;
-			setExpDate = expDate;
+			PIN = setPIN;
+			expDate = setExpDate;
 		}
 
 	}
 	
 	bool changePIN(int conPIN, int newPIN)
 	{
-		if (error > 2 || conPIN > 999 || conPIN < 100)
+		if (error > 2 || conPIN > 9999 || conPIN < 1000)
 			return false;
 		if (conPIN == PIN)
 			PIN = newPIN;
@@ -46,26 +43,29 @@ public:
 	}
 
 
-	bool grantAccess(int conPIN)
+	int grantAccess(int conPIN)
 	{
-		if (error >= 3 || conPIN > 999 || conPIN < 100)
+		
+		if (error >= 3 || conPIN > 9999 || conPIN < 1000)
 			return false;
 		if (conPIN == PIN)
+		{
 			return true;
+		}
 		else
 			return false;
 	}
 
-	bool expired(int date)
+	bool expired(long long int date)
 	{
 		if (date < expDate)
-			return false;
-		else return true;
+			return true;
+		else return false;
 	}
 
-	bool checkCardNum(int testCardNum)
+	bool checkCardNum(long long int testCardNum)
 	{
-		if (testCardNum = cardNumber)
+		if (testCardNum == cardNumber)
 			return true;
 		else
 			return false;
