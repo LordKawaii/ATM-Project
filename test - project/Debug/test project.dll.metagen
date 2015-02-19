@@ -22,3 +22,9 @@ Class testproject.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     testSetZip(): PrivateScope, Public, HideBySig
     testSetDOB(): PrivateScope, Public, HideBySig
     testAddCard(): PrivateScope, Public, HideBySig
+    inputCorrectLength(): PrivateScope, Public, HideBySig
+    isConPINCorrect(): PrivateScope, Public, HideBySig
+    isPINchanged(): PrivateScope, Public, HideBySig
+    isLockoutWorking(): PrivateScope, Public, HideBySig
+    isExpired(): PrivateScope, Public, HideBySig
+    isNumCorrect(): PrivateScope, Public, HideBySig
