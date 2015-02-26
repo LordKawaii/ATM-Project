@@ -14,12 +14,12 @@
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
-<<<<<<< HEAD
+
 	std::string name, DOB;
 	int zipCode, cardNumberInput;
 	int todaysDate = 20150226;
 
-=======
+
 	/*std::string name, DOB;
 	int zipCode, Card;
 >>>>>>> 52666a2cf6d0a4b465304e4d5a9016cf5a54032f
@@ -58,10 +58,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	}
 
-<<<<<<< HEAD
-=======
 	tempCard.addCard(Card);*/
->>>>>>> 52666a2cf6d0a4b465304e4d5a9016cf5a54032f
+
 
 	return 0;
 }
