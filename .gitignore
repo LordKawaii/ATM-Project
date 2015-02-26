@@ -10,3 +10,7 @@
 *.exe
 *.lastbuildstate
 *.sln
+*.o
+*.com
+*.class
+*.dll
