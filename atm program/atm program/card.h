@@ -10,7 +10,7 @@ private:
 	long long int expDate; //2016 december 9th
 
 public:
-	card(long long int setCardNumber, int setPIN, long long int setExpDate)
+	card(long long int setCardNumber, int setPIN, long long int setExpDate, *Account )
 	{
 		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999 || startingBalance < 0)
 		{
@@ -18,7 +18,6 @@ public:
 			PIN = -1;
 			expDate = -1;
 			error = 3;
-			balance = -1;
 		}
 		else
 		{

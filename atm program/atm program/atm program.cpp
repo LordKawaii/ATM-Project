@@ -14,19 +14,20 @@
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
-<<<<<<< HEAD
+
 	std::string name, DOB;
 	int zipCode, cardNumberInput;
 	int todaysDate = 20150226;
 
-=======
-	/*std::string name, DOB;
+	std::string name, DOB;
 	int zipCode, Card;
->>>>>>> 52666a2cf6d0a4b465304e4d5a9016cf5a54032f
-	User tempName, tempZip, tempDOB, tempCard;
-	card * theOneCard = card(1223334444555556, 1234, 20181212);
 
-	std::cout << "Please enter your name: ";
+	//User tempName, tempZip, tempDOB, tempCard;
+	card * theOneCard = card(1223334444555556, 1234, 20181212); //THE DATABASE OF CARDS
+
+	User theUser.addCard(theOneCard);
+
+/*	std::cout << "Please enter your name: ";
 	std::cin >> name;
 
 	tempName.setName(name);
@@ -39,12 +40,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::cout << "Please enter your date of birth: ";
 	std::cin >> DOB;
 
-	tempDOB.setDob(DOB);
+	tempDOB.setDob(DOB);*/
 
 	std::cout << "Please enter your card number: ";
 	std::cin >> cardNumberInput;
 
-	tempCard.addCard(cardNumberInput);
+	//tempCard.addCard(cardNumberInput);
 
 	if (theOneCard.cardNumberScale(cardNumberInput) == true)
 	{
@@ -52,16 +53,44 @@ int _tmain(int argc, _TCHAR* argv[])
 		{
 			std::cout << "You're card is expired idiot" << endl;
 			//do something to get rid of this idiot.
+			return -1;
 		}
-		if (theOneCard.lockedOut() == true)
-		std::cout << "Please enter your PIN" << endl;
+		bool flag = true;
+		do while (flag == true;)
+		{
+			if (theOneCard.lockedOut() == true)
+			{
+				std::cout << "HELP  ME SOMEBODY, SOMEONES TRYING TO ROB ME. GET AWAY FROM ME YOU SCOUNDREL. HEELPP."
+					//do something to get rid of this scoundrel
+					return -1;
+			}
+			std::cout << "Please enter your PIN" << endl;
+			int conPIN;
+			std::cin >> conPIN;
+			if (theOneCard.grantAccess(conPIN) == true)
+				flag = false;
+		}
+		bool secondFlag = true;
+		do while (secondFlag == true;)
+		{
+			int menuChoice;
+			std::cout << "Welcome, you got past all my security procedures, you are now free to roam the menu" << endl;
+			std::cout << "Press one for withdraw money." << endl;
+			std::cout << "Press two for adding money" << endl;
+			std::cout << "Press three for something idk" << endl;
+			std::cout << "Press four for changing PIN" << endl;
+			std::cin >> menuChoice;
+
+			if (menuChoice == 1)
+			{
+
+			}
+
+		}
 
 	}
 
-<<<<<<< HEAD
-=======
-	tempCard.addCard(Card);*/
->>>>>>> 52666a2cf6d0a4b465304e4d5a9016cf5a54032f
+
 
 	return 0;
 }

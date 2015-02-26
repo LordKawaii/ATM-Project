@@ -17,7 +17,7 @@ bool User::setName(std::string name)
 
 	for (index = 0; index <= 3; index++)
 	{
-<<<<<<< HEAD
+
 		if (name != "")
 		{
 			names[index] = index;
@@ -26,11 +26,10 @@ bool User::setName(std::string name)
 		}
 		return false;
 	}	
-=======
+
 		return true;
 	}
 	return false;
->>>>>>> origin/master
 }
 
 bool User::setZipcode(int zip)
@@ -50,10 +49,9 @@ bool User::setDob(std::string DOB)
 {
 	if (DOB != "")
 	{
-<<<<<<< HEAD
+
 		//userDOB = DOB;
-=======
->>>>>>> origin/master
+
 		return true;
 	}
 	return false;
@@ -61,18 +59,69 @@ bool User::setDob(std::string DOB)
 
 bool User::addCard(int Card)
 {
-	long int cardNum[3] = {123456789123, 987654321987, 654321987654};
+
+	cardVector[cardVectorSize] = Card;
+	cardVectorSize++;
+	return true;
+	/*long int cardNum[3] = {123456789123, 987654321987, 654321987654};
 
 	for (int i = 0; i < 3; i++)
 	{
 		if (Card == cardNum[i])
 		{
-<<<<<<< HEAD
+
 			//userCard = Card;
-=======
->>>>>>> origin/master
+
 			return true;
 		}
 	}
-	return false;
+	return false;*/
+}
+
+Card * findCard(int cardNumber)
+{
+	for (int i = 0; i < cardVectorSize; i++)
+	{
+		if (cardVector[i].cardNumberScale(cardNumber) == true)
+			return cardVector[i];
+	}
+}
+
+
+bool changePIN(int cardNumber, int conPIN, int newPIN)
+{
+	Card * tempCard = findCard(cardNumber);
+	tempCard.changePIN(conPIN, newPIN);
+}
+
+bool cardNumberScale(int cardNumber)
+{
+	Card * tempCard = findCard(cardNumber);
+	if (tempCard != NULL)
+		return true;
+	else return false;
+}
+
+bool grantAccessCard(int cardNumber, int conPIN)
+{
+	Card * tempCard = findCard(cardNumber);
+	if (tempCard.grantAccess(conPIN) == true)
+		return true;
+	else return false;
+}
+
+bool lockedOut(int cardNumber, int conPIN)
+{
+	Card * tempCard = findCard(cardNumber);
+	if (tempCard.lockedOut() == true)
+		return true;
+	else return false;
+}
+
+bool expired(int cardNumber, long long int todaysDate)
+{
+	Card * tempCard = findCard(cardNumber);
+	if (tempCard.expired(todaysDate) == true)
+		return true;
+	else return false;
 }
