@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Build started 2/26/2015 12:33:45 PM.
      1>Project "C:\Class\CS 246\ATM Project\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Build target(s)).
        Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
@@ -7,3 +8,23 @@
 Build FAILED.
 
 Time Elapsed 00:00:00.02
+=======
+﻿Build started 2/26/2015 12:41:55 PM.
+     1>Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Account.cpp AssemblyInfo.cpp User.cpp "test project.cpp"
+         Account.cpp
+     1>Account.cpp : fatal error C1853: 'Debug\test project.pch' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+         AssemblyInfo.cpp
+     1>AssemblyInfo.cpp : fatal error C1853: 'Debug\test project.pch' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+         User.cpp
+     1>User.cpp : fatal error C1853: 'Debug\test project.pch' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+         test project.cpp
+     1>test project.cpp : fatal error C1853: 'Debug\test project.pch' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+         Generating Code...
+     1>Done Building Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\test project\test project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.48
+>>>>>>> c6f84b51dfdaaf9609387fd2782e4247e71a6243

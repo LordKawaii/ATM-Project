@@ -5,7 +5,7 @@
 //#include
 //#include "nunit.framework"
 
-using namespace NUnit::Framework;
+
 
 User::User()
 {
@@ -17,7 +17,7 @@ bool User::setName(std::string name)
 
 	for (index = 0; index <= 3; index++)
 	{
-<<<<<<< HEAD
+
 		if (name != "")
 		{
 			names[index] = index;
@@ -26,11 +26,7 @@ bool User::setName(std::string name)
 		}
 		return false;
 	}	
-=======
-		return true;
-	}
-	return false;
->>>>>>> origin/master
+
 }
 
 bool User::setZipcode(int zip)
@@ -50,10 +46,8 @@ bool User::setDob(std::string DOB)
 {
 	if (DOB != "")
 	{
-<<<<<<< HEAD
+
 		//userDOB = DOB;
-=======
->>>>>>> origin/master
 		return true;
 	}
 	return false;
@@ -67,10 +61,7 @@ bool User::addCard(int Card)
 	{
 		if (Card == cardNum[i])
 		{
-<<<<<<< HEAD
 			//userCard = Card;
-=======
->>>>>>> origin/master
 			return true;
 		}
 	}

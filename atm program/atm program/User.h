@@ -2,7 +2,7 @@
 #include <cstring>
 #include <string>
 #include "card.h"
-ref class User
+class User
 {
 public:
 	User();
@@ -11,7 +11,7 @@ public:
 	bool setDob(std::string DOB);
 	bool setZipcode(int zip);
 	bool addCard(int Card);
-<<<<<<< HEAD
+
 
 private:
 	std::string userName;
@@ -19,7 +19,6 @@ private:
 	std::string userDOB;
 	int userCard;
 	int index;
-=======
->>>>>>> origin/master
+
 };
 
