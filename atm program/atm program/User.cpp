@@ -1,7 +1,13 @@
 #include "stdafx.h"
 #include "User.h"
-#include <cstring>
 #include <string>
+#include <cstdlib>
+#include <cstring>
+#include <cmath>
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
 
 
 User::User()
@@ -30,6 +36,7 @@ bool User::setZipcode(int zip)
 
 	while (newZip > 1)
 	{
+		userZip = zip;
 		counter++;
 		newZip /= 10;
 	}
@@ -40,6 +47,7 @@ bool User::setDob(std::string DOB)
 {
 	if (DOB != "")
 	{
+		userDOB = DOB;
 		return true;
 	}
 	return false;
@@ -53,7 +61,12 @@ bool User::addCard(int Card)
 	{
 		if (Card == cardNum[i])
 		{
+			userCard = Card;
 			return true;
+		}
+		else if (Card != cardNum[i])
+		{
+			std::cout << "That is not a valid card number.";
 		}
 	}
 	return false;

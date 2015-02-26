@@ -12,5 +12,8 @@ public:
 
 private:
 	std::string userName;
+	int userZip;
+	std::string userDOB;
+	int userCard;
 };
 
