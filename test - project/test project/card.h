@@ -9,22 +9,23 @@ private:
 	int error = 0;
 	long long int expDate; //2016 december 9th
 
-
 public:
 	card(long long int setCardNumber, int setPIN, long long int setExpDate)
 	{
-		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999)
+		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999 || startingBalance < 0)
 		{
 			cardNumber = -1;
 			PIN = -1;
 			expDate = -1;
 			error = 3;
+			balance = -1;
 		}
 		else
 		{
 			cardNumber = setCardNumber;
 			PIN = setPIN;
 			expDate = setExpDate;
+			balance = startingBalance;
 		}
 
 	}
@@ -59,8 +60,8 @@ public:
 	bool expired(long long int date)
 	{
 		if (date < expDate)
-			return true;
-		else return false;
+			return false;
+		else return true;
 	}
 
 	bool checkCardNum(long long int testCardNum)
@@ -69,7 +70,8 @@ public:
 			return true;
 		else
 			return false;
-
 	}
+
+
 };
 

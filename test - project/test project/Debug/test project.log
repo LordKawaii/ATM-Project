@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Build started 2/26/2015 12:27:51 PM.
      1>Project "C:\Class\CS 246\ATM Project\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Rebuild target(s)).
        Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
@@ -7,3 +8,39 @@
 Build FAILED.
 
 Time Elapsed 00:00:00.01
+=======
+﻿Build started 2/26/2015 12:10:32 PM.
+     1>Project "C:\Users\Ben\Desktop\Giterdone\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES (X86)\NUNIT 2.6.4\BIN\FRAMEWORK\NUNIT.FRAMEWORK.DLL" is missing.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES (X86)\NUNIT 2.6.4\BIN\FRAMEWORK\NUNIT.FRAMEWORK.DLL" is missing.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Stdafx.cpp
+         Stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Account.cpp AssemblyInfo.cpp "test project.cpp" User.cpp
+         Account.cpp
+         AssemblyInfo.cpp
+         test project.cpp
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\card.h(78): warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\card.h(81): warning C4244: 'return' : conversion from '__int64' to 'int', possible loss of data
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(80): warning C4305: 'argument' : truncation from '__int64' to 'int'
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(80): warning C4309: 'argument' : truncation of constant value
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(93): error C2661: 'card::card' : no overloaded function takes 3 arguments
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(95): error C2661: 'card::card' : no overloaded function takes 3 arguments
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(97): error C2661: 'card::card' : no overloaded function takes 3 arguments
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(105): error C2661: 'card::card' : no overloaded function takes 3 arguments
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(115): error C2661: 'card::card' : no overloaded function takes 3 arguments
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(124): error C2661: 'card::card' : no overloaded function takes 3 arguments
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(135): error C2661: 'card::card' : no overloaded function takes 3 arguments
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\test project.h(144): error C2661: 'card::card' : no overloaded function takes 3 arguments
+         User.cpp
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\card.h(78): warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+     1>c:\users\ben\desktop\giterdone\atm-project\test - project\test project\card.h(81): warning C4244: 'return' : conversion from '__int64' to 'int', possible loss of data
+     1>User.cpp(47): warning C4305: 'initializing' : truncation from '__int64' to 'long'
+     1>User.cpp(47): warning C4309: 'initializing' : truncation of constant value
+         Generating Code...
+     1>Done Building Project "C:\Users\Ben\Desktop\Giterdone\ATM-Project\test - project\test project\test project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.79
+>>>>>>> f84faa2c17ffff5bbc56661fdabfd9abde468819
