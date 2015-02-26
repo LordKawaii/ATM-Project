@@ -19,12 +19,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	int zipCode, cardNumberInput;
 	int todaysDate = 20150226;
 
-<<<<<<< HEAD
 	std::string name, DOB;
-=======
 
 	/*std::string name, DOB;
->>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
 	int zipCode, Card;
 
 	//User tempName, tempZip, tempDOB, tempCard;
@@ -61,22 +58,23 @@ int _tmain(int argc, _TCHAR* argv[])
 			return -1;
 		}
 		bool flag = true;
-		do while (flag == true;)
+		do 
 		{
 			if (theUser.lockedOut(cardNumberInput) == true)
 			{
-				std::cout << "HELP  ME SOMEBODY, SOMEONES TRYING TO ROB ME. GET AWAY FROM ME YOU SCOUNDREL. HEELPP."
+				std::cout << "HELP  ME SOMEBODY, SOMEONES TRYING TO ROB ME. GET AWAY FROM ME YOU SCOUNDREL. HEELPP.";
 					//do something to get rid of this scoundrel
-					return -1;
+					return 0;
 			}
 			std::cout << "Please enter your PIN" << endl;
 			int conPIN;
 			std::cin >> conPIN;
 			if (theUser.grantAccess(cardNumberInput, conPIN) == true)
 				flag = false;
-		}
+		} while (flag == true);
+		
 		bool secondFlag = true;
-		do while (secondFlag == true;)
+		do
 		{
 			int menuChoice;
 			std::cout << "Welcome, you got past all my security procedures, you are now free to roam the menu" << endl;
@@ -91,14 +89,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
 			}
 
-		}
+		}while (secondFlag == true);
 
 	}
 
-<<<<<<< HEAD
-=======
-	tempCard.addCard(Card);*/
->>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
+	tempCard.addCard(Card);
 
 
 	return 0;

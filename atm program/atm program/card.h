@@ -1,7 +1,8 @@
+#include "Account.h"
 #pragma once
 
 
-ref class card
+class card
 {
 private:
 	int PIN;
@@ -10,7 +11,7 @@ private:
 	long long int expDate; //2016 december 9th
 
 public:
-	card(long long int setCardNumber, int setPIN, long long int setExpDate, *Account )
+	card(long long int setCardNumber, int setPIN, long long int setExpDate, Account* account )
 	{
 		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999 || startingBalance < 0)
 		{
@@ -45,8 +46,9 @@ public:
 	bool cardNumberScale(int conCardNumber)
 	{
 		if (conCardNumber == cardNumber)
-			return true
-		else return false;
+			return true;
+		else 
+			return false;
 
 	}
 
