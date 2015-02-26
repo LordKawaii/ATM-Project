@@ -8,10 +8,9 @@ private:
 	long long int cardNumber;
 	int error = 0;
 	long long int expDate; //2016 december 9th
-	long long int balance;
 
 public:
-	card(long long int setCardNumber, int setPIN, long long int setExpDate, long long int startingBalance)
+	card(long long int setCardNumber, int setPIN, long long int setExpDate)
 	{
 		if (setCardNumber < 100000000000 || setCardNumber > 999999999999 || setPIN < 1000 || setPIN > 9999 || setExpDate < 10000000 || setExpDate > 99999999 || startingBalance < 0)
 		{
@@ -73,27 +72,6 @@ public:
 			return false;
 	}
 
-	int removeFunds(long long int removeBalance, int conPIN)
-	{
-		if (grantAccess(conPIN) == true && expired(20170508) == false)
-		{
-			balance = balance - removeBalance;
-			return removeBalance;
-		}
-		else
-			return 0;
-	}
 
-
-	int addFunds(long long int addBalance)
-	{
-		if (expired(20170508) == false)
-		{
-			balance = balance + removeBalance;
-			return balance;
-		}
-		else
-			return -1;
-	}
 };
 
