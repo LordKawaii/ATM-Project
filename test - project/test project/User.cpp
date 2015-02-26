@@ -44,7 +44,7 @@ bool User::setDob(std::string DOB)
 
 bool User::addCard(int Card)
 {
-	int cardNum[3] = {123456789123, 987654321987, 654321987654};
+	long int cardNum[3] = {123456789123, 987654321987, 654321987654};
 
 	for (int i = 0; i < 3; i++)
 	{
