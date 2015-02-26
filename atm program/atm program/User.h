@@ -15,5 +15,6 @@ private:
 	int userZip;
 	std::string userDOB;
 	int userCard;
+	int index;
 };
 

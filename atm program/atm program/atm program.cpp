@@ -14,7 +14,7 @@
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
-	std::string name, DOB;
+	/*std::string name, DOB;
 	int zipCode, Card;
 	User tempName, tempZip, tempDOB, tempCard;
 
@@ -36,7 +36,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::cout << "Please enter your card number: ";
 	std::cin >> Card;
 
-	tempCard.addCard(Card);
+	tempCard.addCard(Card);*/
 
 	return 0;
 }

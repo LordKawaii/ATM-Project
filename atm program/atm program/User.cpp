@@ -21,12 +21,18 @@ User::~User()
 
 bool User::setName(std::string name = "")
 {
-	if (name != "")
+	std::string names[3] = {"JJ", "Ben", "Sean"};
+
+	for (index = 0; index <= 3; index++)
 	{
-		userName = name;
-		return true;
-	}
-	return false;
+		if (name != "")
+		{
+			names[index] = index;
+			//userName = name;
+			return true;
+		}
+		return false;
+	}	
 }
 
 bool User::setZipcode(int zip)
@@ -47,7 +53,7 @@ bool User::setDob(std::string DOB)
 {
 	if (DOB != "")
 	{
-		userDOB = DOB;
+		//userDOB = DOB;
 		return true;
 	}
 	return false;
@@ -55,13 +61,13 @@ bool User::setDob(std::string DOB)
 
 bool User::addCard(int Card)
 {
-	long int cardNum[3] = { 123456789123, 987654321987, 654321987654 };
+	long int cardNum[3] = {123456789123, 987654321987, 654321987654};
 
 	for (int i = 0; i < 3; i++)
 	{
 		if (Card == cardNum[i])
 		{
-			userCard = Card;
+			//userCard = Card;
 			return true;
 		}
 		else if (Card != cardNum[i])
