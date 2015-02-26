@@ -1,33 +1,9 @@
-﻿Build started 2/24/2015 12:36:53 PM.
-     1>Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Stdafx.cpp
-         Stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\test project.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\NUnit 2.6.4\bin\framework\nunit.framework.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Account.cpp AssemblyInfo.cpp User.cpp "test project.cpp"
-         Account.cpp
-         AssemblyInfo.cpp
-         User.cpp
-     1>User.cpp(47): warning C4305: 'initializing' : truncation from '__int64' to 'long'
-     1>User.cpp(47): warning C4309: 'initializing' : truncation of constant value
-         test project.cpp
-     1>c:\users\nwtech\documents\github\atm-project\test - project\test project\test project.h(80): warning C4305: 'argument' : truncation from '__int64' to 'int'
-     1>c:\users\nwtech\documents\github\atm-project\test - project\test project\test project.h(80): warning C4309: 'argument' : truncation of constant value
-         Generating Code...
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\nwtech\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cpp"
-         .NETFramework,Version=v4.5.AssemblyAttributes.cpp
-       ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\Debug\test project.dll" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\Debug\test project.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
-         Debug\Account.obj
-         Debug\AssemblyInfo.obj
-         Debug\Stdafx.obj
-         "Debug\test project.obj"
-         Debug\User.obj
-         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         test project.vcxproj -> C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\Debug\test project.dll
-     1>Done Building Project "C:\Users\nwtech\Documents\GitHub\ATM-Project\test - project\test project\test project.vcxproj" (Build target(s)).
+﻿Build started 2/26/2015 12:27:51 PM.
+     1>Project "C:\Class\CS 246\ATM Project\ATM-Project\test - project\test project\test project.vcxproj" on node 2 (Rebuild target(s)).
+       Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(44,5): error MSB8020: The builds tools for v120 (Platform Toolset = 'v120') cannot be found. To build using the v120 build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install v120 to build using the v120 build tools.
+     1>Done Building Project "C:\Class\CS 246\ATM Project\ATM-Project\test - project\test project\test project.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:04.59
+Time Elapsed 00:00:00.01
