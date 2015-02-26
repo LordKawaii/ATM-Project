@@ -19,7 +19,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	int zipCode, cardNumberInput;
 	int todaysDate = 20150226;
 
+<<<<<<< HEAD
 	std::string name, DOB;
+=======
+
+	/*std::string name, DOB;
+>>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
 	int zipCode, Card;
 
 	//User tempName, tempZip, tempDOB, tempCard;
@@ -90,6 +95,10 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	}
 
+<<<<<<< HEAD
+=======
+	tempCard.addCard(Card);*/
+>>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
 
 
 	return 0;
