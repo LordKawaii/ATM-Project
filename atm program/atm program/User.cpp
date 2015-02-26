@@ -110,7 +110,7 @@ bool grantAccessCard(int cardNumber, int conPIN)
 	else return false;
 }
 
-bool lockedOut(int cardNumber, int conPIN)
+bool lockedOut(int cardNumber)
 {
 	Card * tempCard = findCard(cardNumber);
 	if (tempCard.lockedOut() == true)

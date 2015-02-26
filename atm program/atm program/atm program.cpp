@@ -47,9 +47,9 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//tempCard.addCard(cardNumberInput);
 
-	if (theOneCard.cardNumberScale(cardNumberInput) == true)
+	if (theUser.cardNumberScale(cardNumberInput) == true)
 	{
-		if (theOneCard.expired(todaysDate))
+		if (theUser.expired(cardNumberInput, todaysDate))
 		{
 			std::cout << "You're card is expired idiot" << endl;
 			//do something to get rid of this idiot.
@@ -58,7 +58,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		bool flag = true;
 		do while (flag == true;)
 		{
-			if (theOneCard.lockedOut() == true)
+			if (theUser.lockedOut(cardNumberInput) == true)
 			{
 				std::cout << "HELP  ME SOMEBODY, SOMEONES TRYING TO ROB ME. GET AWAY FROM ME YOU SCOUNDREL. HEELPP."
 					//do something to get rid of this scoundrel
@@ -67,7 +67,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			std::cout << "Please enter your PIN" << endl;
 			int conPIN;
 			std::cin >> conPIN;
-			if (theOneCard.grantAccess(conPIN) == true)
+			if (theUser.grantAccess(cardNumberInput, conPIN) == true)
 				flag = false;
 		}
 		bool secondFlag = true;
