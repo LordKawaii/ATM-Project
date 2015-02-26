@@ -81,7 +81,7 @@ namespace testproject {
 			Assert::AreEqual(false, user.addCard(894654));
 		}
 
-		//CARDTEST AHEAD
+	/*	//CARDTEST AHEAD
 		//
 		//
 		//
@@ -133,8 +133,8 @@ namespace testproject {
 		void isExpired()
 		{
 			card testCard5(102323498504, 1234, 20161209);
-			Assert::AreEqual(true, testCard5.expired(20150214));
-			Assert::AreEqual(false, testCard5.expired(20181212));
+			Assert::AreEqual(false, testCard5.expired(20150214));
+			Assert::AreEqual(true, testCard5.expired(20181212));
 		}
 
 		[Test]
@@ -145,7 +145,7 @@ namespace testproject {
 			Assert::AreEqual(true, testCard6.checkCardNum(102323498504));
 			Assert::AreEqual(false, testCard6.checkCardNum(201812120275));
 
-		}
+		}*/
 	private:
 		Account account;
 		User user;

@@ -1,30 +1,23 @@
+
 #include "stdafx.h"
 #include "User.h"
-#include <string>
-#include <cstdlib>
-#include <cstring>
-#include <cmath>
-#include <iostream>
-#include <fstream>
-#include <iomanip>
-#include <iostream>
+//Looking it up, if we want to use nunit we have to make it be in the name space instead of doind a 
+//#include
+//#include "nunit.framework"
 
+using namespace NUnit::Framework;
 
 User::User()
 {
 }
 
-
-User::~User()
-{
-}
-
-bool User::setName(std::string name = "")
+bool User::setName(std::string name)
 {
 	std::string names[3] = {"JJ", "Ben", "Sean"};
 
 	for (index = 0; index <= 3; index++)
 	{
+<<<<<<< HEAD
 		if (name != "")
 		{
 			names[index] = index;
@@ -33,6 +26,11 @@ bool User::setName(std::string name = "")
 		}
 		return false;
 	}	
+=======
+		return true;
+	}
+	return false;
+>>>>>>> origin/master
 }
 
 bool User::setZipcode(int zip)
@@ -42,7 +40,6 @@ bool User::setZipcode(int zip)
 
 	while (newZip > 1)
 	{
-		userZip = zip;
 		counter++;
 		newZip /= 10;
 	}
@@ -53,7 +50,10 @@ bool User::setDob(std::string DOB)
 {
 	if (DOB != "")
 	{
+<<<<<<< HEAD
 		//userDOB = DOB;
+=======
+>>>>>>> origin/master
 		return true;
 	}
 	return false;
@@ -67,12 +67,11 @@ bool User::addCard(int Card)
 	{
 		if (Card == cardNum[i])
 		{
+<<<<<<< HEAD
 			//userCard = Card;
+=======
+>>>>>>> origin/master
 			return true;
-		}
-		else if (Card != cardNum[i])
-		{
-			std::cout << "That is not a valid card number.";
 		}
 	}
 	return false;

@@ -1,14 +1,17 @@
 #pragma once
+#include <cstring>
 #include <string>
-class User
+#include "card.h"
+ref class User
 {
 public:
 	User();
-	~User();
+
 	bool setName(std::string name);
 	bool setDob(std::string DOB);
 	bool setZipcode(int zip);
 	bool addCard(int Card);
+<<<<<<< HEAD
 
 private:
 	std::string userName;
@@ -16,5 +19,7 @@ private:
 	std::string userDOB;
 	int userCard;
 	int index;
+=======
+>>>>>>> origin/master
 };
 
