@@ -14,9 +14,17 @@
 using namespace std;
 int _tmain(int argc, _TCHAR* argv[])
 {
+<<<<<<< HEAD
 	std::string name, DOB;
+	int zipCode, cardNumberInput;
+	int todaysDate = 20150226;
+
+=======
+	/*std::string name, DOB;
 	int zipCode, Card;
+>>>>>>> 52666a2cf6d0a4b465304e4d5a9016cf5a54032f
 	User tempName, tempZip, tempDOB, tempCard;
+	card * theOneCard = card(1223334444555556, 1234, 20181212);
 
 	std::cout << "Please enter your name: ";
 	std::cin >> name;
@@ -34,9 +42,26 @@ int _tmain(int argc, _TCHAR* argv[])
 	tempDOB.setDob(DOB);
 
 	std::cout << "Please enter your card number: ";
-	std::cin >> Card;
+	std::cin >> cardNumberInput;
 
-	tempCard.addCard(Card);
+	tempCard.addCard(cardNumberInput);
+
+	if (theOneCard.cardNumberScale(cardNumberInput) == true)
+	{
+		if (theOneCard.expired(todaysDate))
+		{
+			std::cout << "You're card is expired idiot" << endl;
+			//do something to get rid of this idiot.
+		}
+		if (theOneCard.lockedOut() == true)
+		std::cout << "Please enter your PIN" << endl;
+
+	}
+
+<<<<<<< HEAD
+=======
+	tempCard.addCard(Card);*/
+>>>>>>> 52666a2cf6d0a4b465304e4d5a9016cf5a54032f
 
 	return 0;
 }

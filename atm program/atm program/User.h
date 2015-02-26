@@ -11,5 +11,15 @@ public:
 	bool setDob(std::string DOB);
 	bool setZipcode(int zip);
 	bool addCard(int Card);
+<<<<<<< HEAD
+
+private:
+	std::string userName;
+	int userZip;
+	std::string userDOB;
+	int userCard;
+	int index;
+=======
+>>>>>>> origin/master
 };
 
