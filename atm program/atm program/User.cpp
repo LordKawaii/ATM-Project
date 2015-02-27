@@ -9,6 +9,7 @@
 
 User::User()
 {
+	cardVectorSize = 0;
 }
 
 bool User::setName(std::string name)
@@ -26,12 +27,15 @@ bool User::setName(std::string name)
 		}
 		return false;
 	}	
+<<<<<<< HEAD
 
 
 		return true;
 	}
 	return false;
 
+=======
+>>>>>>> 589806ca4c281d6ae93701c21788070f79f34705
 }
 
 bool User::setZipcode(int zip)
@@ -53,7 +57,10 @@ bool User::setDob(std::string DOB)
 	{
 
 		//userDOB = DOB;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 589806ca4c281d6ae93701c21788070f79f34705
 		return true;
 	}
 	return false;
@@ -71,13 +78,7 @@ bool User::addCard(int Card)
 	{
 		if (Card == cardNum[i])
 		{
-<<<<<<< HEAD
-
 			//userCard = Card;
-
-=======
-			//userCard = Card;
->>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
 			return true;
 		}
 	}
