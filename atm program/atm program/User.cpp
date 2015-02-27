@@ -25,7 +25,17 @@ bool User::setName(std::string name)
 		}
 		return false;
 	}	
+<<<<<<< HEAD
 
+
+
+		return true;
+	}
+	return false;
+
+=======
+
+>>>>>>> 945f72b6fb969f147879a780a5fe39be66c3a5fe
 }
 
 bool User::setZipcode(int zip)
