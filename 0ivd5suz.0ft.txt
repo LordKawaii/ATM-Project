@@ -1,0 +1,32 @@
+﻿Merge
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 4 and 4 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# Changes to be committed:
+#	deleted:    atm program/Debug/atm program.exe
+#	deleted:    atm program/Debug/atm program.ilk
+#	deleted:    atm program/Debug/atm program.pdb
+#	modified:   atm program/atm program.sdf
+#	deleted:    atm program/atm program/Debug/User.obj
+#	modified:   atm program/atm program/Debug/atm program.log
+#	deleted:    atm program/atm program/Debug/atm program.obj
+#	deleted:    atm program/atm program/Debug/atm program.pch
+#	deleted:    atm program/atm program/Debug/stdafx.obj
+#	deleted:    atm program/atm program/Debug/vc120.idb
+#	deleted:    atm program/atm program/Debug/vc120.pdb
+#	modified:   test - project/test project.sdf
+#	modified:   test - project/test project/Debug/test project.log
+#
+# Untracked files:
+#	atm program/atm program.opensdf
+#	atm program/ipch/atm program-14806ef0/
+#	atm-project/
+#	test - project/ipch/test project-65a7e514/
+#	test - project/test project/Debug/test project.vcxprojResolveAssemblyReference.cache
+#
+
