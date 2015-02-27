@@ -122,7 +122,7 @@ bool User::cardNumberScale(int cardNumber)
 bool User::grantAccessCard(int cardNumber, int conPIN)
 {
 	card * tempCard = findCard(cardNumber);
-	if (tempCard.grantAccess(conPIN) == true)
+	if (tempCard->grantAccess(conPIN) == true)
 		return true;
 	else return false;
 }
@@ -130,7 +130,7 @@ bool User::grantAccessCard(int cardNumber, int conPIN)
 bool User::lockedOut(int cardNumber)
 {
 	card * tempCard = findCard(cardNumber);
-	if (tempCard.lockedOut() == true)
+	if (tempCard->lockedOut() == true)
 		return true;
 	else return false;
 }
@@ -138,7 +138,7 @@ bool User::lockedOut(int cardNumber)
 bool User::expired(int cardNumber, long long int todaysDate)
 {
 	card * tempCard = findCard(cardNumber);
-	if (tempCard.expired(todaysDate) == true)
+	if (tempCard->expired(todaysDate) == true)
 		return true;
 	else return false;
 }
