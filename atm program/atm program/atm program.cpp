@@ -8,7 +8,6 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
-#include <iostream>
 #include "User.h"
 
 using namespace std;
@@ -19,8 +18,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int cardNumberInput;
 	int todaysDate = 20150226;
 
-<<<<<<< HEAD
-=======
+
 	std::string name, DOB;
 
 	/*std::string name, DOB;
@@ -89,12 +87,15 @@ int _tmain(int argc, _TCHAR* argv[])
 
 			if (menuChoice == 1)
 			{
+				
+				std::string amount;
+				std::cout << "How much do you want to withdraw: ";
+				std::cin >> amount;
 
 			}
 			else if (menuChoice == 2)
 			{
 
-<<<<<<< HEAD
 			}
 			else if (menuChoice == 3)
 			{
@@ -104,10 +105,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			{
 
 			}
-		}
-=======
 		}while (secondFlag == true);
->>>>>>> 589806ca4c281d6ae93701c21788070f79f34705
 
 	}
 

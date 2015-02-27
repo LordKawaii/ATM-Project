@@ -14,3 +14,5 @@
 *.com
 *.class
 *.dll
+*.opensdf
+*.cache
