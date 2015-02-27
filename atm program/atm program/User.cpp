@@ -1,15 +1,13 @@
 
 #include "stdafx.h"
 #include "User.h"
-//Looking it up, if we want to use nunit we have to make it be in the name space instead of doind a 
-//#include
-//#include "nunit.framework"
 
 
 
 User::User()
 {
 	cardVectorSize = 0;
+	numAccounts = 0;
 }
 
 bool User::setName(std::string name)
@@ -27,6 +25,7 @@ bool User::setName(std::string name)
 		}
 		return false;
 	}	
+<<<<<<< HEAD
 
 
 
@@ -34,6 +33,9 @@ bool User::setName(std::string name)
 	}
 	return false;
 
+=======
+
+>>>>>>> 945f72b6fb969f147879a780a5fe39be66c3a5fe
 }
 
 bool User::setZipcode(int zip)
@@ -61,10 +63,10 @@ bool User::setDob(std::string DOB)
 	return false;
 }
 
-bool User::addCard(int Card)
+bool User::addCard(card *card)
 {
 
-	cardVector[cardVectorSize] = Card;
+	cardVector[cardVectorSize] = card;
 	cardVectorSize++;
 	return true;
 	/*long int cardNum[3] = {123456789123, 987654321987, 654321987654};
@@ -80,25 +82,48 @@ bool User::addCard(int Card)
 	return false;*/
 }
 
-Card * User::findCard(int cardNumber)
+
+bool User::addAccount(Account *account)
 {
-	for (int i = 0; i < cardVectorSize; i++)
+	if (!checkForAcc(account))
 	{
-		if (cardVector[i].cardNumberScale(cardNumber) == true)
+		accounts[numAccounts++] = account;
+		return true;
+	}
+	return false;
+}
+
+
+card * User::findCard(int cardNumber)
+{
+	for (int i = 0; i <= cardVectorSize; i++)
+	{
+		if (cardVector[i]->cardNumberScale(cardNumber) == true)
 			return cardVector[i];
 	}
 }
 
+bool User::checkForAcc(Account * account)
+{
+	for (int i = 0; i < numAccounts; i++)
+	{
+		if (accounts[i] == account)
+		{
+			return true;
+		}
+	}
+	return false;
+}
 
 bool User::changePIN(int cardNumber, int conPIN, int newPIN)
 {
-	Card * tempCard = findCard(cardNumber);
-	tempCard.changePIN(conPIN, newPIN);
+	card * tempCard = findCard(cardNumber);
+	tempCard->changePIN(conPIN, newPIN);
 }
 
 bool User::cardNumberScale(int cardNumber)
 {
-	Card * tempCard = findCard(cardNumber);
+	card * tempCard = findCard(cardNumber);
 	if (tempCard != NULL)
 		return true;
 	else return false;
@@ -106,24 +131,24 @@ bool User::cardNumberScale(int cardNumber)
 
 bool User::grantAccessCard(int cardNumber, int conPIN)
 {
-	Card * tempCard = findCard(cardNumber);
-	if (tempCard.grantAccess(conPIN) == true)
+	card * tempCard = findCard(cardNumber);
+	if (tempCard->grantAccess(conPIN) == true)
 		return true;
 	else return false;
 }
 
 bool User::lockedOut(int cardNumber)
 {
-	Card * tempCard = findCard(cardNumber);
-	if (tempCard.lockedOut() == true)
+	card * tempCard = findCard(cardNumber);
+	if (tempCard->lockedOut() == true)
 		return true;
 	else return false;
 }
 
 bool User::expired(int cardNumber, long long int todaysDate)
 {
-	Card * tempCard = findCard(cardNumber);
-	if (tempCard.expired(todaysDate) == true)
+	card * tempCard = findCard(cardNumber);
+	if (tempCard->expired(todaysDate) == true)
 		return true;
 	else return false;
 }
