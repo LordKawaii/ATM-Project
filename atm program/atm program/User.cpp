@@ -28,6 +28,15 @@ bool User::setName(std::string name)
 		}
 		return false;
 	}	
+<<<<<<< HEAD
+
+
+		return true;
+	}
+	return false;
+
+=======
+>>>>>>> 589806ca4c281d6ae93701c21788070f79f34705
 }
 
 bool User::setZipcode(int zip)
@@ -49,6 +58,10 @@ bool User::setDob(std::string DOB)
 	{
 
 		//userDOB = DOB;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 589806ca4c281d6ae93701c21788070f79f34705
 		return true;
 	}
 	return false;
@@ -73,7 +86,11 @@ bool User::addCard(card *card)
 	return false;*/
 }
 
+<<<<<<< HEAD
 bool User::addAccount(Account *account)
+=======
+Card * User::findCard(int cardNumber)
+>>>>>>> 9568e7c3adaa54fa36e1e4a39342f35c0b817494
 {
 	if (!checkForAcc(account))
 	{
