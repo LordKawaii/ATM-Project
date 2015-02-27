@@ -27,12 +27,11 @@ bool User::setName(std::string name)
 		return false;
 	}	
 
-<<<<<<< HEAD
+
 		return true;
 	}
 	return false;
-=======
->>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
+
 }
 
 bool User::setZipcode(int zip)
@@ -54,10 +53,7 @@ bool User::setDob(std::string DOB)
 	{
 
 		//userDOB = DOB;
-<<<<<<< HEAD
 
-=======
->>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
 		return true;
 	}
 	return false;
@@ -88,7 +84,7 @@ bool User::addCard(int Card)
 	return false;*/
 }
 
-Card * findCard(int cardNumber)
+Card * User::findCard(int cardNumber)
 {
 	for (int i = 0; i < cardVectorSize; i++)
 	{
@@ -98,13 +94,13 @@ Card * findCard(int cardNumber)
 }
 
 
-bool changePIN(int cardNumber, int conPIN, int newPIN)
+bool User::changePIN(int cardNumber, int conPIN, int newPIN)
 {
 	Card * tempCard = findCard(cardNumber);
 	tempCard.changePIN(conPIN, newPIN);
 }
 
-bool cardNumberScale(int cardNumber)
+bool User::cardNumberScale(int cardNumber)
 {
 	Card * tempCard = findCard(cardNumber);
 	if (tempCard != NULL)
@@ -112,7 +108,7 @@ bool cardNumberScale(int cardNumber)
 	else return false;
 }
 
-bool grantAccessCard(int cardNumber, int conPIN)
+bool User::grantAccessCard(int cardNumber, int conPIN)
 {
 	Card * tempCard = findCard(cardNumber);
 	if (tempCard.grantAccess(conPIN) == true)
@@ -120,7 +116,7 @@ bool grantAccessCard(int cardNumber, int conPIN)
 	else return false;
 }
 
-bool lockedOut(int cardNumber)
+bool User::lockedOut(int cardNumber)
 {
 	Card * tempCard = findCard(cardNumber);
 	if (tempCard.lockedOut() == true)
@@ -128,7 +124,7 @@ bool lockedOut(int cardNumber)
 	else return false;
 }
 
-bool expired(int cardNumber, long long int todaysDate)
+bool User::expired(int cardNumber, long long int todaysDate)
 {
 	Card * tempCard = findCard(cardNumber);
 	if (tempCard.expired(todaysDate) == true)

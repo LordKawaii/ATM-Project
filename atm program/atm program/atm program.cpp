@@ -16,16 +16,9 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 
 	std::string name, DOB;
-	int zipCode, cardNumberInput;
+	int cardNumberInput;
 	int todaysDate = 20150226;
 
-<<<<<<< HEAD
-	std::string name, DOB;
-=======
-
-	/*std::string name, DOB;
->>>>>>> 027b3f19ff2cf4954c4cb4040f04cceffb624237
-	int zipCode, Card;
 
 	//User tempName, tempZip, tempDOB, tempCard;
 	card * theOneCard = card(1223334444555556, 1234, 20181212); //THE DATABASE OF CARDS
@@ -90,7 +83,18 @@ int _tmain(int argc, _TCHAR* argv[])
 			{
 
 			}
+			else if (menuChoice == 2)
+			{
 
+			}
+			else if (menuChoice == 3)
+			{
+
+			}
+			else if (menuChoice == 4)
+			{
+
+			}
 		}
 
 	}

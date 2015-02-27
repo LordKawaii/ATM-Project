@@ -79,13 +79,6 @@ public:
 		else return true;
 	}
 
-	bool checkCardNum(long long int testCardNum)
-	{
-		if (testCardNum == cardNumber)
-			return true;
-		else
-			return false;
-	}
 
 
 };
