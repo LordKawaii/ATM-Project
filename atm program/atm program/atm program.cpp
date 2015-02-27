@@ -19,13 +19,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int cardNumberInput;
 	int todaysDate = 20150226;
 
-<<<<<<< HEAD
-=======
-	std::string name, DOB;
-
-	/*std::string name, DOB;
 	int zipCode, Card;
->>>>>>> 589806ca4c281d6ae93701c21788070f79f34705
 
 	//User tempName, tempZip, tempDOB, tempCard;
 	card * theOneCard = card(1223334444555556, 1234, 20181212); //THE DATABASE OF CARDS
@@ -94,7 +88,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			else if (menuChoice == 2)
 			{
 
-<<<<<<< HEAD
+
 			}
 			else if (menuChoice == 3)
 			{
@@ -102,16 +96,21 @@ int _tmain(int argc, _TCHAR* argv[])
 			}
 			else if (menuChoice == 4)
 			{
+				std::cout << "Please enter your PIN again" << endl;
+				int conPIN2;
+				std::cin >> conPIN2;
+				
+				std::cout << "Please enter your NEEEEWWWW pin." << endl;
+				int newPIN;
+				std::cin >> newPIN;
 
+				theUser.changePIN(cardNumberInput, conPIN2, newPIN)
 			}
-		}
-=======
+
 		}while (secondFlag == true);
->>>>>>> 589806ca4c281d6ae93701c21788070f79f34705
 
 	}
 
-	tempCard.addCard(Card);
 
 
 	return 0;
